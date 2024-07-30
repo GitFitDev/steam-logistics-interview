@@ -53,6 +53,7 @@ export const Signup: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
+      reset();
     }, 3000);
   });
 
@@ -63,6 +64,12 @@ export const Signup: React.FC = () => {
       )}
       {isLoading && errorLength === 0 && (
         <AlertNotification color="green" title="Success" />
+      )}
+
+      {errorLength === 0 && !isLoading && (
+        <AlertNotification
+          title="No Changes"
+        />
       )}
 
       <div>

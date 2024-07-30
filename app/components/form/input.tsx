@@ -32,8 +32,6 @@ const Input: React.FC<InputProps> = ({
     formState: { errors },
   } = useFormContext();
 
-  const { message } = errors.id || {};
-  console.log("errors", errors);
   return (
     <TextInput
       {...register(id, validation)}
