@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This app uses a combination of Mantine and Tailwind for styling components. There is no error state when submitting since there is no backend to check against.
+
+This app also uses Zustand for State management and yup for form validation.
+
 ## Getting Started
 
 First, run the development server:
